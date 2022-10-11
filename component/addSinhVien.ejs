@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thêm sinh viên nhá</title>
 </head>
+
 <body>
     <h1>Đây là trang thêm sinh viên vào nhé các bạn ơi</h1>
-    <form action="/saveSinhVien" method="post">
+    <form action="/saveSinhVien" method="post" enctype="multipart/form-data">
         <label for="">Nhập mã số sinh viên cần thêm vào nhá</label> <br>
         <input type="text" name="ma_sinhvie" placeholder="Vui lòng nhập mã sinh viên" id=""> <br>
         <label for="">Nhập tên sinh viên vào nhá</label> <br>
@@ -18,5 +20,10 @@
         <label for=""></label> <br>
         <input type="submit" value="ADD">
     </form>
+    <p>Quay lại trang chủ nhá</p>
+    <form action="/home" method="post" enctype="multipart/form-data">
+        <input type="submit" value="Quay Lại">
+    </form>
 </body>
+
 </html>
