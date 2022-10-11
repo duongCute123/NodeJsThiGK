@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Chào mừng bạn đến với bình nguyên vô tận</h1>
+    
+    <h1>Hiển thị danh sách sinh viên nhá</h1>
+    <table>
+        <tr>
+            <th>Mã Sinh Vin</th>
+            <th>Tên Sinh Viên</th>
+            <th>Dịa Chỉ</th>
+            <th>Chon</th>
+        </tr>
+
+        <% for(let i=0; i< sinhViens.length; i++) { %>
+            <tr>
+                <td>
+                    <%= sinhViens[i].ma_sinhvie %>
+                </td>
+                <td>
+                    <%= sinhViens[i].ten_sinhvien %>
+                </td>
+                <td>
+                    <%= sinhViens[i].dia_chi %>
+                </td>
+            </tr>
+            <% } %>
+    </table>
+
+</body>
+
+</html>
