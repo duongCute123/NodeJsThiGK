@@ -5,10 +5,6 @@ var multer=require("multer")
 var upload=multer()
 var AWS=require("aws-sdk")
 AWS.config.update({
-    region:"ap-southeast-1",
-    accessKeyId:"AKIASREHWAQR7HFMDYBW",
-    secretAccessKey:"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"
-    
 })
 
 var docClient=new AWS.DynamoDB.DocumentClient()
